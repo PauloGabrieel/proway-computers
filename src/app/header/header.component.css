@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 30px;
 }
 
 .main-header__title {    
@@ -29,6 +29,9 @@
     justify-content: flex-end;
 }
 
+.main-header__menu ul li {
+    
+}
 .main-header__menu a {
     padding: 10px 10px;
     color: var(--gray);

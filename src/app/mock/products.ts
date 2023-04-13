@@ -5,6 +5,9 @@ export interface IProduto {
     descricaoPreco: string;
     stockQuantity: number;
     imagem: string;
+} 
+export interface IProductCart extends IProduto {
+    amount: number;
 }
 
 export const produtos: IProduto[] = [
