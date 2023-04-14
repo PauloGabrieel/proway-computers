@@ -11,8 +11,8 @@ export class CartService {
 
 
   getCart() {
-    const cart = JSON.parse(localStorage.getItem("cart") || "");
-    return cart;
+    this.items = JSON.parse(localStorage.getItem("cart") || "[]");
+    return this.items;
   }
 
   addToCart(product: IProductCart) {
@@ -23,6 +23,11 @@ export class CartService {
   cleanTheCart() {
     this.items = [];
     localStorage.clear();
+  }
+
+  removeProduct(productId: number) {
+    this.items = this.items.filter(item => item.id !== productId )
+    localStorage.setItem("cart", JSON.stringify(this.items));
   }
 }
 
