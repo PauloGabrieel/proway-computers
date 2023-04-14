@@ -78,7 +78,11 @@ textarea {
 }
 
 .valid {
-    border: 1px solid var(--green);
+    border: 1px solid green;
+}
+
+.valid:focus {
+	border-color: green;
 }
 
 .invalid {
