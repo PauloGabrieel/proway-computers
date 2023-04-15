@@ -6,7 +6,7 @@
 
 .footer__container {
     display: flex;
-    fle-direction: row;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-flow: row wrap;
     padding: 20px;
